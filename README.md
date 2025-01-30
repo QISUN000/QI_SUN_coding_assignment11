@@ -1,4 +1,5 @@
-# Instructions to Run React Application
+## Running the React Application
+Follow these steps to run the React application on localhost:7775.
 
 ## Prerequisites
 - Docker Desktop

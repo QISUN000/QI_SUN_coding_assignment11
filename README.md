@@ -1,22 +1,40 @@
-# Docker React Development Environment
-
-React app running on localhost:7775 displaying "Codin 1".
+# Instructions to Run React Application
 
 ## Prerequisites
 - Docker Desktop
-- Git
+- Node.js and npm
 
-## Getting Started
+## Steps to Run Application on localhost:7775
 
-1. Build the Docker image:
+1. Download or clone this repository
+
+2. Open a terminal and navigate to the project directory:
+```bash
+cd qi_sun_site
+```
+
+3. Install React dependencies:
+```bash
+npm install
+```
+
+4. Start the React development server with Docker:
 ```bash
 docker build -t qi_sun_coding_assignment11 .
+docker run -p 7775:7775 --name qi_sun_coding_assignment11 qi_sun_coding_assignment11
 ```
 
-2. Run the container:
+5. Open your web browser and visit:
+```
+http://localhost:7775
+```
+
+You should now see the React application with "Codin 1" displayed.
+
+## Troubleshooting
+If you see any errors:
+1. Make sure npm install completed successfully
+2. Check if the React app runs without Docker first:
 ```bash
-docker run -d -p 7775:3000 --name qi_sun_coding_assignment11 qi_sun_coding_assignment11
+npm start
 ```
-
-3. View the app at: [http://localhost:7775](http://localhost:7775)
-

@@ -9,7 +9,7 @@ Follow these steps to run the React application on localhost:7775.
 
 1. Download or clone this repository or create new react project using
 ```bash
-npx create-react-app
+npm create-react-app qi_sun_site
 ```
 
 2. Open a terminal and navigate to the project directory:
